@@ -70,7 +70,7 @@ def login():
 
 def run(client):
     print('running ...')
-    for comment in client.subreddit(SUBREDDIT).comments(limit=None):
+    for comment in client.subreddit(SUBREDDIT).stream.comments():
         if comment.saved or comment.author == client.user.me():
             continue
 
