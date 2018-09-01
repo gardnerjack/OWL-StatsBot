@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+praw = "==5.4.0"
+prawcore = "==0.14.0"
+pytablewriter = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

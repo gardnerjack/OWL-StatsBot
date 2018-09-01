@@ -1,31 +1,15 @@
 URL = "https://api.overwatchleague.com/stats/players?stage_id=regular_season"
+SUBREDDIT = 'competitiveoverwatch'
 
-PLAYER_RESPONSE = (
-    "# Statistics for {}\n\n"
-    "Role: {}  \nTeam: {}\n\n---\n\n"
-    "| Statistics | |\n|:--|:--|\n"
-    "| Average eliminations per 10min     | {:.2f} |\n"
-    "| Average deaths per 10min           | {:.2f} |\n"
-    "| Average hero damage per 10min      | {:.2f} |\n"
-    "| Average healing per 10min          | {:.2f} |\n"
-    "| Average ultimates earned per 10min | {:.2f} |\n"
-    "| Average final blows per 10min      | {:.2f} |\n"
-    "| Total Time Played (hours)          | {:.2f} |"
-)
-
-COMPARISON_RESPONSE = (
-    "# {} vs. {}\n\n"
-    "{}: {} for {}.  \n{}: {} for {}.\n\n---\n\n"
-    "| Statistics                         | {}     | {}     |\n"
-    "|:-----------------------------------|:-------|:-------|\n"
-    "| Average eliminations per 10min     | {:.2f} | {:.2f} |\n"
-    "| Average deaths per 10min           | {:.2f} | {:.2f} |\n"
-    "| Average hero damage per 10min      | {:.2f} | {:.2f} |\n"
-    "| Average healing per 10min          | {:.2f} | {:.2f} |\n"
-    "| Average ultimates earned per 10min | {:.2f} | {:.2f} |\n"
-    "| Average final blows per 10min      | {:.2f} | {:.2f} |\n"
-    "| Total Time Played (hours)          | {:.2f} | {:.2f} |"
-)
+TABLE = [[
+    "Average eliminations per 10min",
+    "Average deaths per 10min",
+    "Average hero damage per 10min",
+    "Average healing per 10min",
+    "Average ultimates earned per 10min",
+    "Average final blows per 10min",
+    "Total Time Played (hours)"
+]]
 
 FOOTER = (
     "\n\nAll stats sourced from [here]({link}).\n\n"
@@ -50,8 +34,8 @@ TEAMS = {
 }
 
 PLAYERS = {
-    'sbb': 'Saebyeolbe',
-    'sdb': 'ShaDowBurn',
-    'zebbo': 'Zebbosai',
-    'rjh': 'ryujehong'
+    'sbb':   'Saebyeolbe',
+    'sdb':   'ShaDowBurn',
+    'rjh':   'ryujehong',
+    'zebbo': 'Zebbosai'
 }
