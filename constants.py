@@ -15,7 +15,11 @@ FOOTER = (
     "\n\nAll stats sourced from [here]({link}).\n\n"
     "---\n"
     "^(I am a bot and this action was performed automatically)  \n"
-    "^(Send me a PM to provide feedback)"
+    "^(Send me a PM to provide feedback)\n\n"
+    "    usage:\n"
+    "        !stats <up to 5 players>"
+    "        e.g. !stats fissure gesture mano"
+    "        command needs to be on it's own line"
 ).format(link=URL)
 
 TEAMS = {

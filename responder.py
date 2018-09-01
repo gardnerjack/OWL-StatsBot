@@ -37,7 +37,7 @@ def stats(players):
     writer.write_table()
     reply = "# Statistics for " + ', '.join(player_names) + "\n\n"
     reply += ''.join([
-        f"{name}: {roles[name]} for {teams[name]}.\n"
+        f"{name}: {roles[name]} for {teams[name]}.  \n"
         for name in player_names
     ]) + "\n---\n\n"
     return reply + writer.stream.getvalue() + CON.FOOTER
