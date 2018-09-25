@@ -12,15 +12,15 @@ TABLE = [[
 ]]
 
 FOOTER = (
-    "\n\nAll stats sourced from [here]({link}).\n\n"
+    "\n\nAll stats sourced from [here]({data_link}).\n\n"
     "---\n"
     "^(I am a bot and this action was performed automatically)  \n"
-    "^(Send me a PM to provide feedback)\n\n"
+    "^(Send [my creator a PM]({pm_link}) to provide feedback)\n\n"
     "    usage:\n"
     "        !stats <up to 5 players>\n"
     "        e.g. !stats fissure gesture mano\n"
     "        command needs to be on it's own line"
-).format(link=URL)
+).format(data_link = URL, pm_link="https://www.reddit.com/message/compose/?to=NobleLordOfLaziness")
 
 TEAMS = {
     'BOS': 'Boston Uprising',
