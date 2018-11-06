@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-praw = "==5.4.0"
-prawcore = "==0.14.0"
+praw = "*"
+six = "*"
 pytablewriter = "*"
 
 [dev-packages]

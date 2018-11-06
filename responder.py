@@ -8,14 +8,14 @@ import pytablewriter
 import constants as CON
 
 STATS = requests.get(CON.URL).json()['data']
-COMMAND = re.compile('!stats (.*)', re.IGNORECASE)
+COMMAND = re.compile('!stats (.+)', re.IGNORECASE)
 
 def stats(players):
-    players = list(map(lambda p: CON.PLAYERS.get(p.lower(), p.lower()), players))
+    players = list(map(lambda p: p.lower(), players))
     player_names = []
     teams = {}
     roles = {}
-    table = copy.deepcopy(CON.TABLE)
+    table = [copy.copy(CON.TABLE)]
     for player in STATS:
         if player['name'].lower() in players:
             player_names.append(player['name'])
@@ -66,7 +66,7 @@ def run(client):
         print('found comment: https://reddit.com' + comment.permalink)
         print('command:', bot_call.group(0))
         terms = bot_call.group(1).strip().split(' ')
-        stats(terms[:5])
+        reply = stats(terms[:5])
 
         if reply is not None:
             comment.reply(reply)
@@ -77,4 +77,5 @@ def run(client):
 
 
 if __name__ == "__main__":
-    print(stats(["Gesture", "Fissure", "Mano"]))
+    client = login()
+    run(client)

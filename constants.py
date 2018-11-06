@@ -1,7 +1,7 @@
 URL = "https://api.overwatchleague.com/stats/players?stage_id=regular_season"
-SUBREDDIT = 'competitiveoverwatch'
+SUBREDDIT = 'competitiveoverwatch+test'
 
-TABLE = [[
+TABLE = [
     "Average eliminations per 10min",
     "Average deaths per 10min",
     "Average hero damage per 10min",
@@ -9,13 +9,13 @@ TABLE = [[
     "Average ultimates earned per 10min",
     "Average final blows per 10min",
     "Total Time Played (hours)"
-]]
+]
 
 FOOTER = (
     "\n\nAll stats sourced from [here]({data_link}).\n\n"
     "---\n"
     "^(I am a bot and this action was performed automatically)  \n"
-    "^(Send [my creator a PM]({pm_link}) to provide feedback)\n\n"
+    "[^Send ^my ^creator ^a ^PM]({pm_link}) ^(to provide feedback)\n\n"
     "    usage:\n"
     "        !stats <up to 5 players>\n"
     "        e.g. !stats fissure gesture mano\n"
@@ -35,11 +35,4 @@ TEAMS = {
     'VAL': 'Los Angeles Valiant',
     'FLA': 'Florida Mayhem',
     'SEO': 'Seoul Dynasty'
-}
-
-PLAYERS = {
-    'sbb':   'Saebyeolbe',
-    'sdb':   'ShaDowBurn',
-    'rjh':   'ryujehong',
-    'zebbo': 'Zebbosai'
 }
