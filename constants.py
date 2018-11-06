@@ -1,5 +1,5 @@
 URL = "https://api.overwatchleague.com/stats/players?stage_id=regular_season"
-SUBREDDIT = 'competitiveoverwatch+test'
+SUBREDDIT = 'competitiveoverwatch'
 
 TABLE = [
     "Average eliminations per 10min",
