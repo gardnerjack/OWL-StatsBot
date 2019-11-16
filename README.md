@@ -4,11 +4,12 @@
 
 This is a basic reddit bot that provides users with player statistics from the Overwatch League. Operates in [r/competitiveoverwatch](https://reddit.com/r/competitiveoverwatch).
 
-`!stats [Player Name]` will provide stats for that player (e.g. `!stats Gesture`).  
-`!stats [Player1 Name] [Player2 Name]` will compare the statistics for the two players.
+`!stats <up to 5 players>` will provide stats for the players in a table format (e.g. `!stats Gesture` or `!stats akm libero`).  
 
 All statistics sourced from [here](https://api.overwatchleague.com/stats/players?stage_id=regular_season).
 
 ## Requirements
 
 - praw
+- six
+- pytablewriter
